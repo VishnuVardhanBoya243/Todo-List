@@ -2,7 +2,7 @@ import axios from "axios";
 import React from "react";
 import { useEffect, useState } from "react";
 
-const BASE_URL = process.env.BACK_END_URL
+const BASE_URL = process.env.REACT_APP_BACK_END_URL || "http://localhost:3001";
 
 function Todo() {
     const [todoList, setTodoList] = useState([]);
